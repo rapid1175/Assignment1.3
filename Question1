@@ -1,0 +1,10 @@
+#Question 1 a
+curl -o expression.tab https://www.staff.hs-mittweida.de/~wuenschi/data/media/compbiolbook/expression.tab
+
+#Question 1 b
+curl -o annotation.tab https://www.staff.hs-mittweida.de/~wuenschi/data/media/compbiolbook/annotation.tab
+
+#Question 1 c
+sort -n expression.tab > sortexpression.tab
+sort -n annotation.tab > sortannotation.tab
+join sortannotation.tab sortexpression.tab > joined.tab	
