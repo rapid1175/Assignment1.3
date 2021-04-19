@@ -1,0 +1,1 @@
+Select LastName, FirstName, m.MemberID From (Entry GROUP by MemberID HAVING COUNT(DISTINCT Year) =3;
