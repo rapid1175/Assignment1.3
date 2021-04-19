@@ -1,0 +1,1 @@
+Select LastName, FirstName, m.MemberID From (Member m INNER JOIN Entry e On m.MemberID = e.MemberID) Where Year <> 2013;
